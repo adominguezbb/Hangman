@@ -26,7 +26,7 @@ const boton_letras = document.querySelectorAll( "#letras button" );
 boton.addEventListener('click', iniciar );
 
 function iniciar(event){
-    imagen.src = 'img/img0.png';
+    imagen.src = 'img/0.png';
     boton.disabled = true;
     fallos = 0;
     cant_aciertos = 0; 
@@ -77,7 +77,7 @@ function click_letras(event){
 
     if( acierto == false ){
         fallos++;
-        const source = `img/img${fallos}.png` ;
+        const source = `img/${fallos}.png` ;
         imagen.src = source;
     }
 
